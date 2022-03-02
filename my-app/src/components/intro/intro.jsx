@@ -1,4 +1,5 @@
 import "./intro.css";
+import me from "../../img/me.png";
 
 const Intro = () => { 
     return(
@@ -21,7 +22,8 @@ const Intro = () => {
               </div>
            </div>
            <div className="i-right">
-             <img src="" alt="" className="i-img" />
+               <div className="i-bg"></div>
+             <img src={me} alt="" className="i-img" />
            </div>
         </div>
     )}
