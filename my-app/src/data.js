@@ -1,6 +1,8 @@
 import Quiz from './img/quiz.png'
 import Tech from './img/techblog.png'
 import weather from './img/weatherapp.png'
+import soundlane from './img/soundlane.png'
+import notetaker from './img/notetaker.png'
 
 export const project = [
     {
@@ -20,13 +22,13 @@ export const project = [
     },
     {
         id:4,
-        img: 'http://',
-        link: 'http://'
+        img: soundlane,
+        link: 'https://samuellutz.github.io/Sound-Lane/'
     },
     {
         id:5,
-        img: 'http://',
-        link: 'http://'
+        img: notetaker,
+        link: 'https://aqueous-sierra-11647.herokuapp.com/'
     },
     {
         id:6,
