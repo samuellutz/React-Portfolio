@@ -3,6 +3,7 @@ import Tech from './img/techblog.png'
 import weather from './img/weatherapp.png'
 import soundlane from './img/soundlane.png'
 import notetaker from './img/notetaker.png'
+import dayplanner from './img/dayplanner.png'
 
 export const project = [
     {
@@ -32,7 +33,7 @@ export const project = [
     },
     {
         id:6,
-        img: 'http://',
-        link: 'http://'
+        img: dayplanner,
+        link: 'https://samuellutz.github.io/day-planner/'
     }
 ]
