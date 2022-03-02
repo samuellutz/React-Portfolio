@@ -1,17 +1,21 @@
+import Quiz from './img/quiz.png'
+import Tech from './img/techblog.png'
+import weather from './img/weatherapp.png'
+
 export const project = [
     {
         id:1,
-        img: './img/quiz.png',
+        img: Quiz,
         link: 'https://stark-scrubland-48398.herokuapp.com/'
     },
     {
         id:2,
-        img: './img/techblog.png',
+        img: Tech,
         link: 'https://stark-bastion-46946.herokuapp.com/'
     },
     {
         id:3,
-        img: './img/weatherapp.png',
+        img: weather,
         link: 'https://samuellutz.github.io/Weather-App/'
     },
     {
