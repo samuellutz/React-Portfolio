@@ -1,4 +1,5 @@
 import "./projects.css";
+import React from 'react';
 
 const Project = ({img,link})=> {
     return (
