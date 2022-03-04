@@ -4,11 +4,12 @@ import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Github from '../../img/github.png';
 import Link from '../../img/linkedin.png';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () =>{
     const formRef = useRef()
+    const [done, setDone] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,6 +20,7 @@ const Contact = () =>{
             'yFACQZ_NuRwMkKDoC')
       .then((result) => {
           console.log(result.text);
+          setDone(true);
       }, (error) => {
           console.log(error.text);
       });
@@ -74,6 +76,7 @@ const Contact = () =>{
                             <input type="text" placeholder="Email" name="user_Email"/>
                             <textarea rows="5" placeholder="message" name="user_message"></textarea>
                             <button>submit</button>
+                            {done && "Thank you, message sent!"}
                         </form>
                     </div>   
                 </div>
