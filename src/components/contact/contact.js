@@ -8,7 +8,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () =>{
-    const formRef = useRef
+    const formRef = useRef()
 
     const handleSubmit = (e) => {
         e.preventDefault();
