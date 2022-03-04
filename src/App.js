@@ -1,6 +1,7 @@
 import Intro from "./components/intro/intro";
 import Projectlist from "./components/projectlist/projectlist"
 import Navbar from "./components/navbar/navbar"
+import Contact from "./components/contact/contact";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Intro/>
       <Projectlist />
+      <Contact />
     </div>
   );
 }

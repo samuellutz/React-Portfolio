@@ -1,0 +1,54 @@
+.cont{
+    height: 100vh;
+    position: relative;
+}
+
+.cont-bg{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    background-color:green;
+}
+.cont-wrap{
+    padding: 50px;
+    display: flex;
+}
+.cont-left{
+flex: 1;
+}
+
+.cont-right{
+    flex: 1;
+    position: relative;
+}
+.cont-title{
+    font-size: 60px;
+    width:25%;
+}
+.cont-info-item{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: bold;
+}
+.cont-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+form{
+    margin-top:15px;
+}
+input{
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 10px 0px;
+    font-size: bold;
+}
+
+textarea{
+    width: 100%;
+}
