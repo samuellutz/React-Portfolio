@@ -1,13 +1,12 @@
 .cont{
     height: 100vh;
-    position: relative;
+    display: flex;
 }
 
 .cont-bg{
-    width: 20px;
+    width: 100%;
     height: 100%;
     position: absolute;
-    background-color:green;
 }
 .cont-wrap{
     padding: 50px;
@@ -19,6 +18,8 @@ flex: 1;
 
 .cont-right{
     flex: 1;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 .cont-title{
@@ -51,4 +52,14 @@ input{
 
 textarea{
     width: 100%;
+    margin: 10px 0px;
+    font-size: bold;
+}
+button{
+    border: none;
+    padding:12px;
+    background-color: #228b22;
+    color:ivory;
+    font-weight: bold;
+    cursor: pointer;
 }

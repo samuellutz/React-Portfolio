@@ -4,10 +4,27 @@ import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Github from '../../img/github.png';
 import Link from '../../img/linkedin.png';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () =>{
+    const formRef = useRef
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            'service_ggxxtzk', 
+            'template_cpcb8b8', 
+            formRef.current, 
+            'yFACQZ_NuRwMkKDoC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
     return(
-        <div className="cont">
+        <div className="cont" id="contact">
            <div className="cont-bg">
                 <div className="cont-wrap">
                     <div className="cont-left">
@@ -51,7 +68,7 @@ const Contact = () =>{
                         </div>
                     </div>
                     <div className="cont-right">
-                    <form>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                             <input type="text" placeholder="Name" name="user_name"/>
                             <input type="text" placeholder="Subject" name="user_Subject"/>
                             <input type="text" placeholder="Email" name="user_Email"/>
