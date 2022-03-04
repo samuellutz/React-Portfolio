@@ -1,8 +1,25 @@
 .container{
-  padding: 50px 100px;
+  padding: 5px 10px;
   display: flex;
-  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: gray;
 }
 .pro{
   margin: 0px 50px;
+  width: 100%;
+  padding: 10px 100px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+a{
+width: 30%;
+font-weight: bold;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 0px 200px;
+position: relative;
 }
